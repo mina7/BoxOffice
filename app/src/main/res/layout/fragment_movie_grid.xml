@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_movies_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MoviesFragment">
+
+    <TextView
+        android:id="@+id/textView_popOrTop"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+        android:padding="4dp"
+        android:text="@string/popular"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:elevation="@dimen/cardview_default_elevation"
+        android:textAppearance="?android:textAppearanceLarge"
+        tools:targetApi="lollipop" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridView
+            android:id="@+id/moviesGrid"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:horizontalSpacing="4dp"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="6dp" />
+    </android.support.v4.widget.SwipeRefreshLayout>
+</LinearLayout>
