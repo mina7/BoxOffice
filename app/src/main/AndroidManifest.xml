@@ -19,11 +19,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Favorites"
+            android:name=".FavoritesActivity"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MovieDetails"
-            android:parentActivityName=".Favorites">
+            android:parentActivityName=".FavoritesActivity">
             <intent-filter>
                 <action android:name="android.intent.action.SEND" />
                 <data android:mimeType="text/plain" />

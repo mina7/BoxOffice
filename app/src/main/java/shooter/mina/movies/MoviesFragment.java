@@ -295,7 +295,7 @@ public class MoviesFragment extends Fragment implements AdapterView.OnItemClickL
             }
         }
         else if (item.getItemId() == R.id.favorites){
-            startActivity(new Intent(getContext(), Favorites.class));
+            startActivity(new Intent(getContext(), FavoritesActivity.class));
         }
         return super.onOptionsItemSelected(item);
     }

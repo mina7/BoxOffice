@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/tablet_Frames"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tablet_Frame"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#000000"
+    tools:context="shooter.mina.movies.MainActivity"
+    >
 
     <FrameLayout
         android:id="@+id/leftFrame"
-        android:layout_width="340dp"
+        android:layout_width="500dp"
         android:layout_height="match_parent"/>
 
     <FrameLayout
         android:id="@+id/rightFrame"
-        android:layout_toRightOf="@id/leftFrame"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>

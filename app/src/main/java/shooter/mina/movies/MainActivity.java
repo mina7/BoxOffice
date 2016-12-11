@@ -11,7 +11,7 @@ import io.realm.RealmConfiguration;
 
 
 public class MainActivity extends AppCompatActivity {
-    boolean bool = false;
+    boolean MasterDetails = false;
 
     @Override
     protected void onStart(){
@@ -30,16 +30,16 @@ public class MainActivity extends AppCompatActivity {
 
         if (obj.isOnline()) {
             if (savedInstanceState == null) {
-                if (findViewById(R.id.tablet_Frames) != null) { //tablet
-                    bool = true;
+                if (findViewById(R.id.tablet_Frame) != null) { //tablet
+                    MasterDetails = true;
                     MoviesFragment moviesFragment = new MoviesFragment();
                     Bundle args = new Bundle();
-                    args.putBoolean("Details", bool);
+                    args.putBoolean("MasterDetails", MasterDetails);
                     moviesFragment.setArguments(args);
                     getSupportFragmentManager().beginTransaction().replace(R.id.leftFrame, moviesFragment).commit();
                     getSupportFragmentManager().beginTransaction().replace(R.id.rightFrame, new DetailsFragment()).commit();
                 } else {
-                    bool = false;
+                    MasterDetails = false;
                     getSupportFragmentManager().beginTransaction().add(R.id.gridview, new MoviesFragment()).commit();
                 }
             }

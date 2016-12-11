@@ -48,7 +48,7 @@ public class NoInternetFragment extends Fragment {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        startActivity(new Intent(getContext(), Favorites.class));
+        startActivity(new Intent(getContext(), FavoritesActivity.class));
         return super.onOptionsItemSelected(item);
     }
 }

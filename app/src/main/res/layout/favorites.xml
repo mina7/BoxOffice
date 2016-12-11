@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:id="@+id/favorites_activity"
     android:background="#000000"
-    tools:context="shooter.mina.movies.Favorites">
+    tools:context="shooter.mina.movies.FavoritesActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"

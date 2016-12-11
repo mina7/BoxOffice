@@ -12,7 +12,7 @@ import io.realm.Realm;
 import io.realm.RealmResults;
 import shooter.mina.movies.DataBasesModel.MovieDB;
 
-public class Favorites extends AppCompatActivity implements AdapterView.OnItemClickListener{
+public class FavoritesActivity extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
     ArrayList<String> posters = new ArrayList<>();
     ArrayList<String> title = new ArrayList<>();
